@@ -1,0 +1,44 @@
+@import '../abstract/variaveis';
+
+nav {
+    background-color: #ff0099;
+    width: 100px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    div {
+        cursor: pointer;
+    }
+
+    span {
+        background-color: black;
+        display: block;
+        height: 5px;
+        width: 40px;
+        margin: 3px 0;
+        transition: 1s;
+    }
+
+    ul {
+        background-color: #ff0099;
+        min-height: 90vh;
+        position: fixed;
+        top: 10vh;
+        right: -100%;
+        width: 50vw;
+        transition: 0.5s;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .menu--active {
+        right: 0%;
+    }
+
+}

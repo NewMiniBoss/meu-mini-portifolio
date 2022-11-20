@@ -1,0 +1,16 @@
+@import '../abstract/variaveis';
+
+header {
+    min-height: 10vh;
+    background-color: #ff0099;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+        margin: 0 0 0 30px;
+        font-size: 22px;
+        font-weight: 300;
+        letter-spacing: .5px;
+    }
+}
