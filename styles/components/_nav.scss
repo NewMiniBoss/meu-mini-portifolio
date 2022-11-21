@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 nav {
-    background-color: #ff0099;
+    background-color: $cor-secundaria;
     width: 100px;
     height: 10vh;
     display: flex;
@@ -14,16 +14,16 @@ nav {
     }
 
     span {
-        background-color: black;
+        background-color: $cor-quaternaria;
         display: block;
-        height: 5px;
-        width: 40px;
-        margin: 3px 0;
+        height: 4px;
+        width: 30px;
+        margin: 4px 0;
         transition: 1s;
     }
 
     ul {
-        background-color: #ff0099;
+        background-color: $cor-secundaria;
         min-height: 90vh;
         position: fixed;
         top: 10vh;

@@ -3,60 +3,36 @@
 body {
     box-sizing: border-box;
     font-family: $fonte;
-    background-color: #000000;
+    background-color: $cor-principal;
+    color: $cor-quaternaria;
 
     .loading--center {
+        position: fixed;
         @include displayFlexCenter;
         min-height: 100vh;
         width: 100vw;
+        background-color: $cor-principal;
+        animation: loading 0.5s forwards 2s;
 
-        .loading {
-            @include displayFlexCenter;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            animation: loading 2s infinite;
-
-            &::before {
-                position: absolute;
-                content: '';
-                height: 100%;
-                width: 100%;
-                border-radius: 50%;
-                box-shadow: 0 0 5px #ffffff4d;
-            }
-
-            @keyframes loading {
-                0% {
-                    transform: rotate(0deg);
-                    box-shadow: 1px 5px 2px #e65c00;
-                }
-
-                50% {
-                    transform: rotate(180deg);
-                    box-shadow: 1px 5px 2px #18b201;
-                }
-
-                100% {
-                    transform: rotate(360deg);
-                    box-shadow: 1px 5px 2px #0456c8;
-                }
+        @keyframes loading {
+            to {
+                transform: translateX(100vw);
+                opacity: 0;
             }
         }
 
-        span {
-            color: #737373;
-            text-transform: uppercase;
-            font-size: 20px;
-            letter-spacing: 1px;
-            line-height: 200px;
-            animation: text 3s infinite;
+        .loading {
+            width: 100px;
+            height: 100px;
+            border: 10px solid;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: icon-loading 1s infinite;
 
-            @keyframes text {
-                50% {
-                    color: #000000;
-                }
+            @keyframes icon-loading {
+                to {
+                    transform: rotate(360deg);
+                }                
             }
         }
     }
