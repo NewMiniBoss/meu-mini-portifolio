@@ -118,7 +118,6 @@ body {
   color: #dff6ff;
 }
 body .loading__center {
-  opacity: 0;
   position: fixed;
   display: flex;
   align-items: center;
@@ -218,17 +217,20 @@ nav .menu__active-icon::before {
 }
 nav ul {
   background-color: #1363df;
-  min-height: 91vh;
+  min-height: 92vh;
   position: fixed;
   top: 8vh;
   right: -100%;
-  width: 40vw;
+  width: 45vw;
   transition: 0.8s;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-direction: column;
+}
+nav ul li {
+  margin: 90px 0 0px 0;
 }
 nav ul li a {
   text-decoration: none;

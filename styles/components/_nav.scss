@@ -46,19 +46,21 @@ nav {
 
     ul {
         background-color: $cor-secundaria;
-        min-height: 91vh;
+        min-height: 92vh;
         position: fixed;
         top: 8vh;
         right: -100%;
-        width: 40vw;
+        width: 45vw;
         transition: 0.8s;
         overflow: hidden;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
         flex-direction: column;
 
         li {
+            margin: 90px 0 0px 0;
+
             a {
                 text-decoration: none;
                 color: $cor-quaternaria;
