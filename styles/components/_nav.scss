@@ -11,15 +11,37 @@ nav {
 
     div {
         cursor: pointer;
+
+        span {
+            display: block;
+            width: 35px;
+            border-top: 4px solid $cor-quaternaria;
+            transition: 0.5s;
+
+            &::after,
+            &::before {
+                content: '';
+                display: block;
+                border-top: 4px solid $cor-quaternaria;
+                margin-top: 5px;
+                transition: 0.5s;
+                position: relative;
+            }
+        }
     }
 
-    span {
-        background-color: $cor-quaternaria;
-        display: block;
-        height: 4px;
-        width: 30px;
-        margin: 4px 0;
-        transition: 1s;
+    .menu__active-icon {
+        border-top-color: transparent;
+        margin: 0 0 15px 0;
+
+        &::after {
+            transform: rotate(135deg);
+        }
+
+        &::before {
+            transform: rotate(-135deg);
+            top: 9px;
+        }
     }
 
     ul {
@@ -37,8 +59,7 @@ nav {
         flex-direction: column;
     }
 
-    .menu--active {
+    .menu__active {
         right: 0%;
     }
-
 }
