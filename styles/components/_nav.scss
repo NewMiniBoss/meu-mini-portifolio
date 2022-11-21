@@ -3,7 +3,7 @@
 nav {
     background-color: $cor-secundaria;
     width: 100px;
-    height: 10vh;
+    height: 8vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ nav {
             display: block;
             width: 35px;
             border-top: 4px solid $cor-quaternaria;
-            transition: 0.5s;
+            transition: .8s;
 
             &::after,
             &::before {
@@ -24,7 +24,7 @@ nav {
                 display: block;
                 border-top: 4px solid $cor-quaternaria;
                 margin-top: 5px;
-                transition: 0.5s;
+                transition: .8s;
                 position: relative;
             }
         }
@@ -46,17 +46,32 @@ nav {
 
     ul {
         background-color: $cor-secundaria;
-        min-height: 90vh;
+        min-height: 92vh;
         position: fixed;
-        top: 10vh;
+        top: 8vh;
         right: -100%;
         width: 50vw;
-        transition: 0.5s;
+        transition: 0.8s;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
+
+        li {
+            a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $cor-quaternaria;
+                font-weight: 400;
+                border-top: 2px solid $cor-terciaria;
+                border-left: 2px solid $cor-terciaria;
+                width: 50vw;
+                height: 18.4vh;   
+            }
+        }
     }
 
     .menu__active {

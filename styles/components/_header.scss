@@ -1,7 +1,10 @@
 @import '../abstract/variaveis';
 
 header {
-    min-height: 10vh;
+    position: fixed;
+    opacity: 0.9;
+    width: 100vw;
+    min-height: 8vh;
     background-color: $cor-secundaria;
     display: flex;
     align-items: center;
