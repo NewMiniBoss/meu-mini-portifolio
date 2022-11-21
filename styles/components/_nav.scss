@@ -3,7 +3,7 @@
 nav {
     background-color: $cor-secundaria;
     width: 100px;
-    height: 8vh;
+    height: 9vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,11 +46,11 @@ nav {
 
     ul {
         background-color: $cor-secundaria;
-        min-height: 92vh;
+        min-height: 91vh;
         position: fixed;
         top: 8vh;
         right: -100%;
-        width: 50vw;
+        width: 40vw;
         transition: 0.8s;
         overflow: hidden;
         display: flex;
@@ -61,15 +61,8 @@ nav {
         li {
             a {
                 text-decoration: none;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 color: $cor-quaternaria;
                 font-weight: 400;
-                border-top: 2px solid $cor-terciaria;
-                border-left: 2px solid $cor-terciaria;
-                width: 50vw;
-                height: 18.4vh;   
             }
         }
     }

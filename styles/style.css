@@ -182,7 +182,7 @@ header h1 {
 nav {
   background-color: #1363df;
   width: 100px;
-  height: 8vh;
+  height: 9vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,11 +218,11 @@ nav .menu__active-icon::before {
 }
 nav ul {
   background-color: #1363df;
-  min-height: 92vh;
+  min-height: 91vh;
   position: fixed;
   top: 8vh;
   right: -100%;
-  width: 50vw;
+  width: 40vw;
   transition: 0.8s;
   overflow: hidden;
   display: flex;
@@ -232,15 +232,8 @@ nav ul {
 }
 nav ul li a {
   text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #dff6ff;
   font-weight: 400;
-  border-top: 2px solid #47b5ff;
-  border-left: 2px solid #47b5ff;
-  width: 50vw;
-  height: 18.4vh;
 }
 nav .menu__active {
   right: 0%;
