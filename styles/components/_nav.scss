@@ -3,20 +3,16 @@
 nav {
     background-color: $cor-principal;
     width: 100px;
-    height: 9vh;
+    height: 8vh;
     @include displayFlexCenter;
     flex-direction: column;
- 
-
     div {
         cursor: pointer;
-
         span {
             display: block;
             width: 35px;
             border-top: 4px solid $cor-quaternaria;
             transition: .4s;
-
             &::after,
             &::before {
                 content: '';
@@ -32,11 +28,9 @@ nav {
     .menu__active-icon {
         border-top-color: transparent;
         margin: 0 0 15px 0;
-
         &::after {
             transform: rotate(135deg);
         }
-
         &::before {
             transform: rotate(-135deg);
             top: 9px;
@@ -56,10 +50,8 @@ nav {
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
-
         li {
             margin: 85px 0 0 0;
-
             a {
                 text-decoration: none;
                 color: $cor-quaternaria;
