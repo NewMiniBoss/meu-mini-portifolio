@@ -34,26 +34,25 @@ main {
             }
 
             .developer {
-                width: 80%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 color: $cor-white;
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: 300;
 
                 &::after {
+              
                     content: '|';
                     position: absolute;
                     right: 0;
                     width: 90%;
                     background-color: $cor-black;
                     animation: developer 2s steps(15) alternate infinite;
-                    z-index: 0;
 
                     @keyframes developer {
                         to {
-                            width: 0%;
+                            width: 7%;
                         }
                     }
                 }

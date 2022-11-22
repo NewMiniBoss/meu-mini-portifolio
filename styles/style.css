@@ -279,12 +279,11 @@ main .home .apresentacao h1 span {
   font-weight: 300;
 }
 main .home .apresentacao .developer {
-  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
 }
 main .home .apresentacao .developer::after {
@@ -295,15 +294,14 @@ main .home .apresentacao .developer::after {
   background-color: #000000;
   -webkit-animation: developer 2s steps(15) alternate infinite;
           animation: developer 2s steps(15) alternate infinite;
-  z-index: 0;
 }
 @-webkit-keyframes developer {
   to {
-    width: 0%;
+    width: 7%;
   }
 }
 @keyframes developer {
   to {
-    width: 0%;
+    width: 7%;
   }
 }/*# sourceMappingURL=style.css.map */
