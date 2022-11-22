@@ -123,7 +123,7 @@ body .loading__center {
   justify-content: center;
   min-height: 100vh;
   width: 100vw;
-  background-color: #176ec6;
+  background-color: #0008C1;
   -webkit-animation: loading 0.5s forwards 1s;
           animation: loading 0.5s forwards 1s;
   z-index: 9999;
@@ -143,7 +143,7 @@ body .loading__center {
 body .loading__center .loading {
   width: 50px;
   height: 50px;
-  border: 5px solid #ffffff;
+  border: 5px solid #FDF0E0;
   border-radius: 50%;
   border-top-color: transparent;
   -webkit-animation: icon-loading 1s infinite;
@@ -165,13 +165,13 @@ header {
   opacity: 1;
   width: 100vw;
   min-height: 8vh;
-  background-color: #176ec6;
+  background-color: #0008C1;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header h1 {
-  color: #ffffff;
+  color: #E6CBA8;
   margin: 0 0 0 25px;
   font-size: 22px;
   font-weight: 300;
@@ -179,7 +179,7 @@ header h1 {
 }
 
 nav {
-  background-color: #176ec6;
+  background-color: #0008C1;
   width: 100px;
   height: 8vh;
   display: flex;
@@ -193,13 +193,13 @@ nav div {
 nav div span {
   display: block;
   width: 35px;
-  border-top: 4px solid #ffffff;
+  border-top: 4px solid #E6CBA8;
   transition: 0.4s;
 }
 nav div span::after, nav div span::before {
   content: "";
   display: block;
-  border-top: 4px solid #ffffff;
+  border-top: 4px solid #E6CBA8;
   margin-top: 5px;
   transition: 0.4s;
   position: relative;
@@ -216,7 +216,7 @@ nav .menu__active-icon::before {
   top: 9px;
 }
 nav ul {
-  background-color: #176ec6;
+  background-color: #0008C1;
   min-height: 92vh;
   position: fixed;
   top: 8vh;
@@ -234,7 +234,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #ffffff;
+  color: #E6CBA8;
   font-weight: 400;
 }
 nav .menu__active {
