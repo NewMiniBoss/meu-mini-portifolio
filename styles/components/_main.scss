@@ -7,20 +7,25 @@ main {
         display: grid;
         height: 100vh;
         width: 100%;
+
         .apresentacao {
             margin: 8vh 0 0 0;
             @include displayFlexCenter;
             flex-direction: column;
+
             img {
+                margin: -70px 0 20px 0;
                 border-radius: 50%;
+                border: 5px solid $cor-quaternaria;
                 width: 300px;
-                margin: -100px 0 20px 0;
             }
+
             h1 {
                 color: $cor-quaternaria;
                 text-align: center;
                 font-weight: 300;
             }
+
             h2 {
                 font-size: 18px;
                 color: $cor-quaternaria;
@@ -28,23 +33,38 @@ main {
                 font-weight: 500;
                 margin: 5px 0 0 0;
             }
+
             h3 {
                 font-size: 22px;
                 color: $cor-quaternaria;
                 text-align: center;
                 font-weight: 700;
-                margin: 20px 0 0 0;
+                margin: 10px 0 0 0;
                 animation: developer 3s steps(20) alternate infinite;
+
                 @keyframes developer {
                     0% {
                         color: $cor-secundaria;
                         font-weight: 100;
                     }
+
                     100% {
                         color: $cor-terciaria;
                         font-weight: 300;
                     }
                 }
+            }
+
+            a {
+                font-style: italic;
+                margin: 30px 0 0 0; 
+                @include displayFlexCenter;
+                text-decoration: none;
+                background-color: $cor-principal;
+                color: $cor-quaternaria;
+                width: 150px;
+                height: 30px;
+                border-radius: 25px;
             }
         }
     }

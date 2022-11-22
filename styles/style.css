@@ -264,9 +264,10 @@ main .home .apresentacao {
   flex-direction: column;
 }
 main .home .apresentacao img {
+  margin: -70px 0 20px 0;
   border-radius: 50%;
+  border: 5px solid #E6CBA8;
   width: 300px;
-  margin: -100px 0 20px 0;
 }
 main .home .apresentacao h1 {
   color: #E6CBA8;
@@ -285,7 +286,7 @@ main .home .apresentacao h3 {
   color: #E6CBA8;
   text-align: center;
   font-weight: 700;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
   -webkit-animation: developer 3s steps(20) alternate infinite;
           animation: developer 3s steps(20) alternate infinite;
 }
@@ -308,4 +309,17 @@ main .home .apresentacao h3 {
     color: #FDF0E0;
     font-weight: 300;
   }
+}
+main .home .apresentacao a {
+  font-style: italic;
+  margin: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #0008C1;
+  color: #E6CBA8;
+  width: 150px;
+  height: 30px;
+  border-radius: 25px;
 }/*# sourceMappingURL=style.css.map */
