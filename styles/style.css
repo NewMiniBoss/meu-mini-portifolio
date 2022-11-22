@@ -123,7 +123,7 @@ body .loading__center {
   justify-content: center;
   min-height: 100vh;
   width: 100vw;
-  background-color: #24d445;
+  background-color: #000000;
   -webkit-animation: loading 0.5s forwards 1s;
           animation: loading 0.5s forwards 1s;
   z-index: 9999;
@@ -165,7 +165,7 @@ header {
   position: fixed;
   width: 100vw;
   min-height: 8vh;
-  background-color: #24d445;
+  background-color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,7 +185,7 @@ header ul li .icons {
   align-items: center;
   justify-content: center;
   font-size: 32px;
-  color: #000000;
+  color: #0e9c28;
   -webkit-animation: icons 4s ease 2s infinite;
           animation: icons 4s ease 2s infinite;
 }
@@ -213,7 +213,7 @@ header ul li .icons {
 }
 
 nav {
-  background-color: #24d445;
+  background-color: #000000;
   width: 100px;
   height: 8vh;
   display: flex;
@@ -227,13 +227,13 @@ nav div {
 nav div span {
   display: block;
   width: 35px;
-  border-top: 4px solid #000000;
+  border-top: 4px solid #0e9c28;
   transition: 0.4s;
 }
 nav div span::after, nav div span::before {
   content: "";
   display: block;
-  border-top: 4px solid #000000;
+  border-top: 4px solid #0e9c28;
   margin-top: 5px;
   transition: 0.4s;
   position: relative;
@@ -250,7 +250,7 @@ nav .menu__active-icon::before {
   top: 9px;
 }
 nav ul {
-  background-color: #24d445;
+  background-color: #000000;
   min-height: 92vh;
   position: fixed;
   top: 8vh;
@@ -268,7 +268,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #0e9c28;
   font-weight: 400;
 }
 nav .menu__active {
@@ -284,10 +284,7 @@ nav .menu__active {
   }
 }
 main .home {
-  background: url("https://acegif.com/wp-content/uploads/gifs/starfall-gif-72.gif");
-  background-position: center;
-  background-size: 100%;
-  background-attachment: scroll;
+  background-color: #0e9c28;
   color: #ffffff;
   display: grid;
   height: 100vh;
@@ -303,37 +300,37 @@ main .home .apresentacao {
 main .home .apresentacao img {
   margin: 0 0 20px 0;
   border-radius: 50%;
-  border: 5px solid #ffffff;
+  border: 10px solid #ffffff;
   width: 300px;
-  -webkit-animation: img-circle 2s steps(15) alternate infinite;
-          animation: img-circle 2s steps(15) alternate infinite;
+  -webkit-animation: img-circle 4s alternate infinite;
+          animation: img-circle 4s alternate infinite;
 }
 @-webkit-keyframes img-circle {
-  0% {
-    border-top: 5px solid #24d445;
+  40% {
+    border-right: 10px solid #000000;
   }
-  25% {
-    border-right: 5px solid #24d445;
+  60% {
+    border-bottom: 10px solid #000000;
   }
-  50% {
-    border-bottom: 5px solid #24d445;
+  80% {
+    border-left: 10px solid #000000;
   }
   100% {
-    border-left: 5px solid #24d445;
+    border-top: 10px solid #000000;
   }
 }
 @keyframes img-circle {
-  0% {
-    border-top: 5px solid #24d445;
+  40% {
+    border-right: 10px solid #000000;
   }
-  25% {
-    border-right: 5px solid #24d445;
+  60% {
+    border-bottom: 10px solid #000000;
   }
-  50% {
-    border-bottom: 5px solid #24d445;
+  80% {
+    border-left: 10px solid #000000;
   }
   100% {
-    border-left: 5px solid #24d445;
+    border-top: 10px solid #000000;
   }
 }
 main .home .apresentacao h1 {
@@ -356,22 +353,22 @@ main .home .apresentacao h3 {
 }
 @-webkit-keyframes developer {
   0% {
-    color: #000000;
+    color: #0e9c28;
     font-weight: 100;
   }
   100% {
-    color: #24d445;
-    font-weight: 300;
+    color: #000000;
+    font-weight: 500;
   }
 }
 @keyframes developer {
   0% {
-    color: #000000;
+    color: #0e9c28;
     font-weight: 100;
   }
   100% {
-    color: #24d445;
-    font-weight: 300;
+    color: #000000;
+    font-weight: 500;
   }
 }
 main .home .apresentacao p {
@@ -384,7 +381,7 @@ main .home .apresentacao a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #24d445;
+  background-color: #000000;
   font-weight: 300;
   font-size: 18px;
   color: #ffffff;
@@ -394,11 +391,7 @@ main .home .apresentacao a {
 }
 main .conhecimentos {
   height: 100vh;
-  background: url("https://i.pinimg.com/564x/7d/bd/0d/7dbd0d4c358c3c1498a619729729ee80.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  background-attachment: scroll;
+  background-color: #08711f;
 }
 
 @media (min-width: 800px) {
