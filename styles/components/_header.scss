@@ -22,7 +22,7 @@ header {
             .icons {
                 @include displayFlexCenter;
                 font-size: 32px;
-                color: $cor-terciaria;
+                color: $cor-secundaria;
                 animation: icons 4s ease 2s infinite;
 
                 @keyframes icons {

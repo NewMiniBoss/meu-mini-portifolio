@@ -11,13 +11,13 @@ nav {
         span {
             display: block;
             width: 35px;
-            border-top: 4px solid $cor-terciaria;
+            border-top: 4px solid $cor-secundaria;
             transition: .4s;
             &::after,
             &::before {
                 content: '';
                 display: block;
-                border-top: 4px solid $cor-terciaria;
+                border-top: 4px solid $cor-secundaria;
                 margin-top: 5px;
                 transition: .4s;
                 position: relative;
@@ -54,7 +54,7 @@ nav {
             margin: 85px 0 0 0;
             a {
                 text-decoration: none;
-                color: $cor-terciaria;
+                color: $cor-secundaria;
                 font-weight: 400;
             }
         }
