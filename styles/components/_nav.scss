@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 nav {
-    background-color: $cor-secundaria;
+    background-color: $cor-principal;
     width: 100px;
     height: 9vh;
     @include displayFlexCenter;
@@ -43,7 +43,7 @@ nav {
     }
 
     ul {
-        background-color: $cor-secundaria;
+        background-color: $cor-principal;
         min-height: 92vh;
         position: fixed;
         top: 8vh;
