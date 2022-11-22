@@ -161,6 +161,7 @@ body .loading__center .loading {
 }
 
 header {
+  opacity: 1;
   position: fixed;
   width: 100vw;
   min-height: 8vh;
@@ -283,7 +284,10 @@ nav .menu__active {
   }
 }
 main .home {
-  background-color: #000000;
+  background: url("https://acegif.com/wp-content/uploads/gifs/starfall-gif-72.gif");
+  background-position: center;
+  background-size: 100%;
+  background-attachment: scroll;
   color: #ffffff;
   display: grid;
   height: 100vh;
@@ -387,6 +391,14 @@ main .home .apresentacao a {
   width: 300px;
   height: 50px;
   border-radius: 25px;
+}
+main .conhecimentos {
+  height: 100vh;
+  background: url("https://i.pinimg.com/564x/7d/bd/0d/7dbd0d4c358c3c1498a619729729ee80.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-attachment: scroll;
 }
 
 @media (min-width: 800px) {

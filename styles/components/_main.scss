@@ -2,7 +2,11 @@
 
 main {
     .home {
-        background-color: $cor-secundaria;
+        background: url('https://acegif.com/wp-content/uploads/gifs/starfall-gif-72.gif');
+        // background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: scroll;
         color: $cor-quaternaria;
         display: grid;
         height: 100vh;
@@ -87,7 +91,18 @@ main {
             }
         }
     }
+
+    .conhecimentos {
+        height: 100vh;
+        background: url('https://i.pinimg.com/564x/7d/bd/0d/7dbd0d4c358c3c1498a619729729ee80.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: scroll;
+    
+    }
 }
+
 
 @media (min-width: 800px) {
     main {
