@@ -123,7 +123,7 @@ body .loading__center {
   justify-content: center;
   min-height: 100vh;
   width: 100vw;
-  background-color: #74cf85;
+  background-color: #24d445;
   -webkit-animation: loading 0.5s forwards 1s;
           animation: loading 0.5s forwards 1s;
   z-index: 9999;
@@ -164,7 +164,7 @@ header {
   position: fixed;
   width: 100vw;
   min-height: 8vh;
-  background-color: #74cf85;
+  background-color: #24d445;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -212,7 +212,7 @@ header ul li .icons {
 }
 
 nav {
-  background-color: #74cf85;
+  background-color: #24d445;
   width: 100px;
   height: 8vh;
   display: flex;
@@ -249,7 +249,7 @@ nav .menu__active-icon::before {
   top: 9px;
 }
 nav ul {
-  background-color: #74cf85;
+  background-color: #24d445;
   min-height: 92vh;
   position: fixed;
   top: 8vh;
@@ -310,16 +310,15 @@ main .home .apresentacao h1 {
 main .home .apresentacao h2 {
   font-size: 18px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   margin: 5px 0 0 0;
 }
 main .home .apresentacao h3 {
   font-size: 22px;
   text-align: center;
-  font-weight: 700;
   margin: 20px 0 0 0;
-  -webkit-animation: developer 2s steps(10) alternate infinite;
-          animation: developer 2s steps(10) alternate infinite;
+  -webkit-animation: developer 2s steps(15) alternate infinite;
+          animation: developer 2s steps(15) alternate infinite;
 }
 @-webkit-keyframes developer {
   0% {
@@ -327,8 +326,8 @@ main .home .apresentacao h3 {
     font-weight: 100;
   }
   100% {
-    color: #d19f47;
-    font-weight: 400;
+    color: #f0f029;
+    font-weight: 300;
   }
 }
 @keyframes developer {
@@ -337,9 +336,12 @@ main .home .apresentacao h3 {
     font-weight: 100;
   }
   100% {
-    color: #d19f47;
-    font-weight: 400;
+    color: #f0f029;
+    font-weight: 300;
   }
+}
+main .home .apresentacao p {
+  display: none;
 }
 main .home .apresentacao a {
   font-style: italic;
@@ -348,11 +350,61 @@ main .home .apresentacao a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-color: #74cf85;
+  background-color: #24d445;
   font-weight: 300;
   font-size: 18px;
   color: #ffffff;
   width: 300px;
   height: 50px;
   border-radius: 25px;
+}
+
+@media (min-width: 750px) {
+  main .home .apresentacao {
+    margin: 8vh 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr auto;
+  }
+  main .home .apresentacao .logo {
+    grid-column: 1/span 1;
+    grid-row: 1/span 2;
+  }
+  main .home .apresentacao .logo img {
+    margin: 0 40px;
+    width: 340px;
+  }
+  main .home .apresentacao .descricao {
+    grid-column: 2/span 1;
+    grid-row: 1/span 2;
+    margin: 0 0 0 15px;
+  }
+  main .home .apresentacao .descricao h1 {
+    font-size: 24px;
+    font-weight: 200;
+  }
+  main .home .apresentacao .descricao h2 {
+    font-size: 28px;
+    font-weight: 500;
+    margin: 2px 0 0 0;
+  }
+  main .home .apresentacao .descricao p {
+    width: 95%;
+    display: block;
+    margin: 20px 0 0 0;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1;
+    line-height: 28px;
+  }
+  main .home .apresentacao .curriculo {
+    grid-column: 1/span 2;
+    grid-row: 3/span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .home .apresentacao .curriculo a {
+    margin: 0px 0 20px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
