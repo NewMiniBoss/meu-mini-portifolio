@@ -4,9 +4,7 @@ nav {
     background-color: $cor-secundaria;
     width: 100px;
     height: 9vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include displayFlexCenter;
     flex-direction: column;
 
     div {
@@ -16,7 +14,7 @@ nav {
             display: block;
             width: 35px;
             border-top: 4px solid $cor-quaternaria;
-            transition: .8s;
+            transition: .4s;
 
             &::after,
             &::before {
@@ -24,7 +22,7 @@ nav {
                 display: block;
                 border-top: 4px solid $cor-quaternaria;
                 margin-top: 5px;
-                transition: .8s;
+                transition: .4s;
                 position: relative;
             }
         }
@@ -51,7 +49,7 @@ nav {
         top: 8vh;
         right: -100%;
         width: 45vw;
-        transition: 0.8s;
+        transition: .4s;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -71,5 +69,16 @@ nav {
 
     .menu__active {
         right: 0%;
+    }
+}
+
+@media (min-width: 600px) {
+    nav {
+        ul {
+            width: 20vw;
+            li {
+                margin: 75px 0 0 0;
+            }
+        }
     }
 }
