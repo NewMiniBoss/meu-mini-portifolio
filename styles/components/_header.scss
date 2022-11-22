@@ -2,7 +2,6 @@
 
 header {
     position: fixed;
-    opacity: 1;
     width: 100vw;
     min-height: 8vh;
     background-color: $cor-principal;
@@ -10,11 +9,34 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    h1 {
-        color: $cor-terciaria;
-        margin: 0 0 0 25px;
-        font-size: 22px;
-        font-weight: 300;
-        letter-spacing: .5px;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 0 0 10px;
+        height: 8vh;
+
+        li {
+            margin: 0 15px;
+
+            .icons {
+                @include displayFlexCenter;
+                font-size: 32px;
+                color: $cor-terciaria;
+                animation: icons 4s ease 2s infinite;
+
+                @keyframes icons {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    70% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
     }
 }

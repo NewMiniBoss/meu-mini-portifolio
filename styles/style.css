@@ -162,7 +162,6 @@ body .loading__center .loading {
 
 header {
   position: fixed;
-  opacity: 1;
   width: 100vw;
   min-height: 8vh;
   background-color: #0008C1;
@@ -170,12 +169,46 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-header h1 {
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 0 0 10px;
+  height: 8vh;
+}
+header ul li {
+  margin: 0 15px;
+}
+header ul li .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
   color: #FDF0E0;
-  margin: 0 0 0 25px;
-  font-size: 22px;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+  -webkit-animation: icons 4s ease 2s infinite;
+          animation: icons 4s ease 2s infinite;
+}
+@-webkit-keyframes icons {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes icons {
+  0% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 nav {
