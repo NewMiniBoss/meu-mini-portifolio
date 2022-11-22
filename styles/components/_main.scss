@@ -13,11 +13,27 @@ main {
             @include displayFlexCenter;
             flex-direction: column;
 
+
             img {
                 margin: 0 0 20px 0;
                 border-radius: 50%;
                 border: 5px solid $cor-quaternaria;
                 width: 300px;
+                animation: img-circle 2s steps(15) alternate infinite;
+                @keyframes img-circle {
+                    0% {
+                        border-top: 5px solid $cor-principal;
+                    }
+                    25% {
+                        border-right: 5px solid $cor-principal;
+                    }
+                    50% {
+                        border-bottom: 5px solid $cor-principal;
+                    }
+                    100% {
+                        border-left: 5px solid $cor-principal;
+                    }
+                }
             }
 
             h1 {
@@ -46,7 +62,7 @@ main {
                     }
 
                     100% {
-                        color: $cor-terciaria;
+                        color: $cor-principal;
                         font-weight: 300;
                     }
                 }
@@ -107,7 +123,7 @@ main {
                         font-weight: 500;
                         margin: 2px 0 0 0;
                     }
-                    
+
 
                     p {
                         width: 95%;
