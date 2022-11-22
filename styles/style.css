@@ -295,6 +295,7 @@ main .home .apresentacao .developer::after {
   background-color: #000000;
   -webkit-animation: developer 2s steps(15) alternate infinite;
           animation: developer 2s steps(15) alternate infinite;
+  z-index: 0;
 }
 @-webkit-keyframes developer {
   to {
