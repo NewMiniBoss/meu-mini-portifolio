@@ -272,7 +272,7 @@ nav ul li a {
   font-weight: 400;
 }
 nav .menu__active {
-  right: 0%;
+  right: -100%;
 }
 
 @media (min-width: 600px) {
@@ -388,10 +388,6 @@ main .home .apresentacao a {
   width: 300px;
   height: 50px;
   border-radius: 25px;
-}
-main .conhecimentos {
-  height: 100vh;
-  background-color: #08711f;
 }
 
 @media (min-width: 800px) {
