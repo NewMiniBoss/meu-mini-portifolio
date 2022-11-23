@@ -1,14 +1,12 @@
 ## Mini portifólio 
-
-
-## Conhecimentos adquiridos 📚
+## Conhecimentos práticados 📚
 - HTML - montagen semântica para Web.
 - SASS – estilizei todo meu projeto de forma dinâmica e organizada.
 - CSS - criei animações, usei grid e flex-box e deixei responsivo para mobile, tablet e desktop.
 - JavaScript - realizei animações de scrool e eventos click, manipulando o DOM.
 
 ## Preview 🎥
-
+![mini portifolio](https://user-images.githubusercontent.com/80296330/203463908-24c8c018-e06f-4a35-a831-7cc27a8d0f30.png)
 
 ## Acessar o projeto e rodar 📁
 
