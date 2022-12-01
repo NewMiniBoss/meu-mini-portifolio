@@ -1,6 +1,6 @@
 ## Mini portifólio 
 ## Conhecimentos práticados 📚
-- HTML - montagen semântica para Web.
+- HTML - montagem semântica para Web.
 - SASS – estilizei todo meu projeto de forma dinâmica e organizada.
 - CSS - criei animações, usei grid e flex-box e deixei responsivo para mobile, tablet e desktop.
 - JavaScript - realizei animações de scrool e eventos click, manipulando o DOM.
